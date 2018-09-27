@@ -1,3 +1,3 @@
 # Programação Orientada a Objetos
-*Professor: Rogério Silva
+Professor: Rogério Silva
 
