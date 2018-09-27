@@ -1,2 +1,3 @@
-# POO-2018-HENRIQUE
+# Programação Orientada a Objetos
+*Professor: Rogério Silva
 
