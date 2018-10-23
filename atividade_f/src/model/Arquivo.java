@@ -3,7 +3,7 @@ package model;
 public class Arquivo {
 
     private String nomeArquivo;
-    private String status;
+    private String status; // tracked e untracked
 
     public Arquivo(String nomeArquivo, String status) {
         this.nomeArquivo = nomeArquivo;
@@ -11,7 +11,11 @@ public class Arquivo {
     }
 
     public void editarArquivo(Arquivo arquivo){
-        arquivo.setStatus("Modificado");
+        arquivo.setStatus("Tracked");
+    }
+
+    public void reset(Arquivo arquivo) {
+        arquivo.setStatus("Untracked");
     }
 
     public String getNomeArquivo() {
