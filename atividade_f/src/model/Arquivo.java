@@ -10,8 +10,8 @@ public class Arquivo {
         this.status = status;
     }
 
-    public void editarArquivo(){
-
+    public void editarArquivo(Arquivo arquivo){
+        arquivo.setStatus("Modificado");
     }
 
     public String getNomeArquivo() {
