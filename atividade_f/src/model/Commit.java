@@ -1,7 +1,6 @@
 package model;
 
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
 
 public class Commit {
 
