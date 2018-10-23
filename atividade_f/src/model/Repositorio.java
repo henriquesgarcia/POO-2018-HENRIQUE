@@ -16,32 +16,29 @@ public class Repositorio {
         for (int i = 0; i < arquivos.size(); i++) {
             if (!arquivos.contains(arquivo)){
                 arquivos.add(arquivo);
+                arquivo.setStatus("Tracked");
             }
         }
     }
 
-    public void apagarArquivo(Arquivo arquivo){
+    public String apagarArquivo(Arquivo arquivo){
+
+        String s = null;
 
         for (int i = 0; i < arquivos.size(); i++) {
 
             if (arquivos.contains(arquivo)){
 
                 arquivos.remove(arquivo);
-                arquivo.setStatus("Deletado");
+                s = "Arquivo removido";
             }
             else
-                System.out.println("Arquivo Inexistente");
+                s = "Arquivo Inexistente";
         }
-
-        arquivos.remove(arquivo);
-        arquivo.setStatus("Deletado");
+        return s;
     }
 
     public void commit(){
-
-    }
-
-    public void push(){
 
     }
 
