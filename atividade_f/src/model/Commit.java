@@ -13,7 +13,39 @@ public class Commit {
         this.id = id;
         this.autor = autor;
         this.mensagem = mensagem;
-        String data = (java.time.LocalDate.now()).format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
-        String hora = (java.time.LocalTime.now()).format(DateTimeFormatter.ofPattern("HH:mm:ss"));
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public String getMensagem() {
+        return mensagem;
+    }
+
+    public void setMensagem(String mensagem) {
+        this.mensagem = mensagem;
+    }
+
+    @Override
+    public String toString() {
+        String s = "id: " + getId() + "\n";
+        s += "Autor: " + getAutor() + "\n";
+        s += "Mensagem: " + getMensagem() + "\n";
+        s += "Data: " + java.time.LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")) + "\n";
+        s += "Hora: " + java.time.LocalTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss")) + "\n";
+        return s;
     }
 }
