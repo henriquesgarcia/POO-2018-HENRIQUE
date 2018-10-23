@@ -3,11 +3,15 @@ package model;
 public class Arquivo {
 
     private String nomeArquivo;
-    private boolean tracked;
+    private String status;
 
-    public Arquivo(String nome, boolean tracked) {
-        this.nomeArquivo = nome;
-        this.tracked = tracked;
+    public Arquivo(String nomeArquivo, String status) {
+        this.nomeArquivo = nomeArquivo;
+        this.status = status;
+    }
+
+    public void editarArquivo(){
+
     }
 
     public String getNomeArquivo() {
@@ -18,11 +22,11 @@ public class Arquivo {
         this.nomeArquivo = nomeArquivo;
     }
 
-    public boolean isTracked() {
-        return tracked;
+    public String isStatus() {
+        return status;
     }
 
-    public void setTracked(boolean tracked) {
-        this.tracked = tracked;
+    public void setStatus(String status) {
+        this.status = status;
     }
 }

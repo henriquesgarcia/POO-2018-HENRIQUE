@@ -12,12 +12,12 @@ public class Repositorio {
         this.arquivos = arquivos;
     }
 
-    public void addArquivo(Arquivo arquivo) {
+    public void criarArquivo(Arquivo arquivo) {
         arquivos.add(arquivo);
     }
 
-    public void apagarArquivo(){
-
+    public void apagarArquivo(Arquivo arquivo){
+        arquivos.remove(arquivo);
     }
 
     public void commit(){
