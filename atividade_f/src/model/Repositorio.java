@@ -12,12 +12,29 @@ public class Repositorio {
         this.arquivos = arquivos;
     }
 
-    public void criarArquivo(Arquivo arquivo) {
-        arquivos.add(arquivo);
+    public void addArquivo(Arquivo arquivo) {
+        for (int i = 0; i < arquivos.size(); i++) {
+            if (!arquivos.contains(arquivo)){
+                arquivos.add(arquivo);
+            }
+        }
     }
 
     public void apagarArquivo(Arquivo arquivo){
+
+        for (int i = 0; i < arquivos.size(); i++) {
+
+            if (arquivos.contains(arquivo)){
+
+                arquivos.remove(arquivo);
+                arquivo.setStatus("Deletado");
+            }
+            else
+                System.out.println("Arquivo Inexistente");
+        }
+
         arquivos.remove(arquivo);
+        arquivo.setStatus("Deletado");
     }
 
     public void commit(){
@@ -26,6 +43,17 @@ public class Repositorio {
 
     public void push(){
 
+    }
+
+    public String listarArquivos(){
+
+        String s = "Arquivos no repositório: " + getNomeRepositorio() + "\n";
+
+        for (int i = 0; i < arquivos.size(); i++) {
+            s += " > " + (i+1) + " - " + getArquivos() + "\n";
+        }
+
+        return s;
     }
 
     public String getNomeRepositorio() {
