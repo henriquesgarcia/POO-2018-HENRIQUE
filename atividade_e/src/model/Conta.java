@@ -3,15 +3,18 @@ package model;
 public class Conta {
 
     private String numeroConta;
-    private Pessoa titular;
+    private String nome;
+    private String cpf;
     private String senha; // no mínimo 4 caracteres
     private double saldo;
 
-    public Conta(String numeroConta, Pessoa titular, String senha, double saldo) {
+    public Conta(String numeroConta, String nome, String cpf, String senha, double saldo) {
         this.numeroConta = numeroConta;
-        this.titular = titular;
+        this.nome = nome;
+        this.cpf = cpf;
         this.senha = senha;
         this.saldo = saldo;
+        String agencia = "401";
     }
 
     public boolean sacar(double valor, String senha){
@@ -43,12 +46,20 @@ public class Conta {
         this.numeroConta = numeroConta;
     }
 
-    public Pessoa getTitular() {
-        return titular;
+    public String getNome() {
+        return nome;
     }
 
-    public void setTitular(Pessoa titular) {
-        this.titular = titular;
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 
     public String getSenha() {
