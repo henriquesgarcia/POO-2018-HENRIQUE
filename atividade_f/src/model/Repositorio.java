@@ -12,15 +12,11 @@ public class Repositorio {
         this.arquivos = arquivos;
     }
 
-    public void novoArquivo() {
-
+    public void addArquivo(Arquivo arquivo) {
+        arquivos.add(arquivo);
     }
 
     public void apagarArquivo(){
-
-    }
-
-    public void add(){
 
     }
 
