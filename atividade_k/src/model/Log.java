@@ -11,5 +11,4 @@ public class Log {
         this.descricao = descricao;
     }
 
-    
 }
