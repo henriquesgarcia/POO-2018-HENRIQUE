@@ -11,9 +11,6 @@ public class Cartao {
         this.descricao = descricao;
     }
 
-    public void adicionarCartao(Cartao cartao){
-    // service
-    }
 
 
 }

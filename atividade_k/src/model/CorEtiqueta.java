@@ -9,7 +9,6 @@ public enum CorEtiqueta {
     private String cor;
 
     CorEtiqueta(String cor){
-
         this.cor = cor;
     }
 

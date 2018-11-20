@@ -15,15 +15,19 @@ public class Etiqueta {
         this.corEtiqueta = corEtiqueta;
     }
 
-    public void criarNovaEtiqueta(){
-    // service
+    public String getNomeEtiqueta() {
+        return nomeEtiqueta;
     }
 
-    public void editarEtiqueta(){
-    // service
+    public void setNomeEtiqueta(String nomeEtiqueta) {
+        this.nomeEtiqueta = nomeEtiqueta;
     }
 
-    public void excluirEtiqueta(){
-        // service
+    public CorEtiqueta getCorEtiqueta() {
+        return corEtiqueta;
+    }
+
+    public void setCorEtiqueta(CorEtiqueta corEtiqueta) {
+        this.corEtiqueta = corEtiqueta;
     }
 }
