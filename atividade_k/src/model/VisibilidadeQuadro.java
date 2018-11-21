@@ -1,14 +1,14 @@
 package model;
 
-public enum Visibilidade {
+public enum VisibilidadeQuadro {
 
-    /* visibilidade do quadro */
+    /* visibilidade do QUADRO */
     PARTICULAR("Particular"),
     PUBLICO("Público");
 
     private String visibilidade;
 
-    Visibilidade(String visibilidade) {
+    VisibilidadeQuadro(String visibilidade) {
         this.visibilidade = visibilidade;
     }
 
