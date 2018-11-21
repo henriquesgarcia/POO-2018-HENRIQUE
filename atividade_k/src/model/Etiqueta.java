@@ -3,16 +3,20 @@ package model;
 public class Etiqueta {
 
     private String nomeEtiqueta;
-    private CorEtiqueta corEtiqueta;
+    private String corEtiqueta;
 
 
-    public Etiqueta(String nomeEtiqueta, CorEtiqueta corEtiqueta) {
+    public Etiqueta(String nomeEtiqueta, String corEtiqueta) {
         this.nomeEtiqueta = nomeEtiqueta;
         this.corEtiqueta = corEtiqueta;
     }
 
-    public Etiqueta(CorEtiqueta corEtiqueta) {
+    public void alterarCor (String corEtiqueta) {
         this.corEtiqueta = corEtiqueta;
+    }
+
+    public String getCorEtiqueta() {
+        return corEtiqueta;
     }
 
     public String getNomeEtiqueta() {
@@ -21,13 +25,5 @@ public class Etiqueta {
 
     public void setNomeEtiqueta(String nomeEtiqueta) {
         this.nomeEtiqueta = nomeEtiqueta;
-    }
-
-    public CorEtiqueta getCorEtiqueta() {
-        return corEtiqueta;
-    }
-
-    public void setCorEtiqueta(CorEtiqueta corEtiqueta) {
-        this.corEtiqueta = corEtiqueta;
     }
 }
