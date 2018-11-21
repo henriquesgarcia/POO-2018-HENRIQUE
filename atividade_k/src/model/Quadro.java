@@ -6,14 +6,29 @@ public class Quadro {
 
     private String nomeQuadro;
     private VisibilidadeQuadro visibilidadeQuadro; // PARTICULAR OU PÚBLICA
-    private ArrayList<Lista> listas = new ArrayList<>();
+    private ArrayList<Lista> listas;
+    private boolean fechado;
 
     public Quadro(String nomeQuadro, VisibilidadeQuadro visibilidadeQuadro) {
         this.nomeQuadro = nomeQuadro;
         this.visibilidadeQuadro = visibilidadeQuadro.PARTICULAR;
+        this.listas = new ArrayList<>();
+        this.fechado = false;
     }
 
-    // adicionarLista();
+    public void criarLista(String nome){
+        Lista lista = new Lista(nome);
+
+        listas.add(lista);
+    }
+
+    public void toggleFechado(){
+        this.fechado = !this.fechado;
+    }
+
+    public boolean isFechado() {
+        return fechado;
+    }
 
     public VisibilidadeQuadro getVisibilidadeQuadro() {
         return visibilidadeQuadro;
@@ -31,7 +46,7 @@ public class Quadro {
         this.nomeQuadro = nomeQuadro;
     }
 
-    public ArrayList<Lista> getListas() {
-        return listas;
+    public Lista getListas(int i) {
+        return listas.get(i);
     }
 }
