@@ -29,22 +29,26 @@ public class Service {
 
         String listaDeQuadros = "";
 
-        if (quadros.isEmpty()){
+        if (quadros.isEmpty())
             listaDeQuadros = "Não existem quadros criados\n";
-        } else {
+        else {
             for (int i = 0; i < quadros.size(); i++) {
 
-                listaDeQuadros += " " + quadros.get(i).getNomeQuadro() + "\n";
+                listaDeQuadros += " -> " + quadros.get(i + 1) + " " + quadros.get(i).getNomeQuadro() + "\n";
             }
         }
 
         return listaDeQuadros;
     }
 
+
+    /* ListaService */
     public void criarNovaLista(int i, String nome){
         quadros.get(i).criarLista(nome);
     }
 
+
+    /* Cartao */
     public void criarCartao(int numeroQuadro, int numeroLista, String nome, String descricao){
         quadros.get(numeroQuadro).getListas(numeroLista).criarCartao(nome, descricao);
     }
