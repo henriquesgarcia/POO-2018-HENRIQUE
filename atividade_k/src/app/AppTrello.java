@@ -26,6 +26,9 @@ public class AppTrello {
                 case 2:
                     JOptionPane.showMessageDialog(null,service.listarQuadros());
                     break;
+
+                default:
+                    JOptionPane.showMessageDialog(null,"Insira um valor válido!");
             }
 
         } while (opcao != 0);
@@ -38,6 +41,10 @@ public class AppTrello {
         s += "1 - Criar Quadro\n";
         s += "2 - Listar Quadros\n";
         s += "3 - Acessar quadro\n\n";
+
+        s += "-------------\n";
+        s += "Quadros:\n";
+
 
         return s;
     }
