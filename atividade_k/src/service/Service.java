@@ -34,7 +34,7 @@ public class Service {
         else {
             for (int i = 0; i < quadros.size(); i++) {
 
-                listaDeQuadros += " -> " + quadros.get(i + 1) + " " + quadros.get(i).getNomeQuadro() + "\n";
+                listaDeQuadros += " -> " + " " + quadros.get(i).getNomeQuadro() + "\n";
             }
         }
 

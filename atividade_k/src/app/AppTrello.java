@@ -52,7 +52,7 @@ public class AppTrello {
     }
 
     private static String menuListarQuadros(){
-        s = "---------------- LISTAGEM DE QUADROS TRISTES ----------------\n\n";
+        s = "---------------- LISTAGEM DE QUADROS ----------------\n\n";
 
         return s;
     }
