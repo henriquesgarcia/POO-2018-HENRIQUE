@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Atividade L</string>
+    <string name="toast">TOAST</string>
+    <string name="mensagem_toast">Olá, serumaninho</string>
+    <string name="aumentar">AUMENTAR</string>
+    <string name="diminuir">DIMINUIR</string>
+    <string name="mensagem_snackbar_aumentar">Somente até 5</string>
+    <string name="mensagem_snackbar_diminuir">Não posso mostrar números negativos</string>
+    <string name="atividade">Atividade</string>
+</resources>
