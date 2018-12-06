@@ -27,6 +27,10 @@ public class AppTrello {
                     JOptionPane.showMessageDialog(null,service.listarQuadros());
                     break;
 
+                case 0:
+                    JOptionPane.showMessageDialog(null,"Saindo do programa...");
+                    Timer.getLogTimers();
+
                 default:
                     JOptionPane.showMessageDialog(null,"Insira um valor válido!");
             }
